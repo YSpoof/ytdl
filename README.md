@@ -4,7 +4,9 @@ A "GUI" For YouTube-DL tool.
 Youtube MP3 Downloader #CodedByZero
 
 Warning: youtube-dl tool must be installed :)
+
 If isn't, use mp3dl -u to update/install
+
 Warning: You also need ffmpeg !
 
 Usage: mp3dl <YTBlink>
