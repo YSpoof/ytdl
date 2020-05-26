@@ -1,0 +1,42 @@
+#!/usr/bin/perl
+
+if($ARGV[0] eq '-h' | $ARGV[0] eq '--help'| $ARGV[0] eq ''){
+print("\nYoutube MP3 Downloader #CodedByZero\n");
+print("Warning: youtube-dl tool must be installed :)\n");
+print("If isn't, use mp3dl -u to update/install\n");
+print("Warning: You also need ffmpeg !\n\n");
+print("Usage: mp3dl <YTBlink>\n\n");
+print("To download a video use: mp3dl -v <YTBlink>\n\n");
+print("To download an entire mp3 playlist use: mp3dl -pm <YTBlink>\n\n");
+print("To download an entire video playlist use: mp3dl -pv <YTBlink>\n\n");
+print("To keep the video file+mp3, use: mp3dl -k <YTBlink>\n\n");
+exit;}
+
+if($ARGV[0] eq '-u'){
+system("sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/bin/youtube-dl");
+system("sudo chmod a+x /usr/bin/youtube-dl");
+exit;}
+
+if($ARGV[0] eq '-v'){
+$link=$ARGV[1];
+system("youtube-dl -f mp4 '$link'");
+exit; }
+
+if($ARGV[0] eq '-pm'){
+$link=$ARGV[1];
+system("youtube-dl -f mp4 -x --audio-format mp3 --audio-quality 320K '$link'");
+exit;}
+
+if($ARGV[0] eq '-pv'){
+$link=$ARGV[1];
+system("youtube-dl -f mp4 '$link'");
+exit;}
+
+if($ARGV[0] eq '-k'){
+$link=$ARGV[1];
+system("youtube-dl -f mp4 --no-playlist -x -k --audio-format mp3 --audio-quality 320K '$link'");
+exit;}
+
+$link=$ARGV[0];
+system("youtube-dl -f mp4 --no-playlist -x --audio-format mp3 --audio-quality 320K '$link'");
+exit;
