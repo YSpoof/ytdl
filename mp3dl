@@ -19,7 +19,7 @@ exit;}
 
 if($ARGV[0] eq '-v'){
 $link=$ARGV[1];
-system("youtube-dl -f mp4 '$link'");
+system("youtube-dl -f mp4 --no-playlist '$link'");
 exit; }
 
 if($ARGV[0] eq '-pm'){
