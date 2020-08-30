@@ -9,7 +9,7 @@ If isn't, use mp3dl -u to update/install
 
 Warning: You also need ffmpeg !
 
-Usage: mp3dl <YTBlink>
+Usage: mp3dl 'YTBlink'
 
 To download a video use: mp3dl -v 'YTBlink'
 
