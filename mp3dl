@@ -24,12 +24,12 @@ exit; }
 
 if($ARGV[0] eq '-pm'){
 $link=$ARGV[1];
-system("youtube-dl -f mp4 -x --audio-format mp3 --audio-quality 320K '$link'");
+system("youtube-dl -i -f mp4 -x --audio-format mp3 --audio-quality 320K '$link'");
 exit;}
 
 if($ARGV[0] eq '-pv'){
 $link=$ARGV[1];
-system("youtube-dl -f mp4 '$link'");
+system("youtube-dl -i -f mp4 '$link'");
 exit;}
 
 if($ARGV[0] eq '-k'){
