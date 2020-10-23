@@ -1,5 +1,6 @@
 # mp3dl
-A "GUI" For YouTube-DL tool.
+Kinda "GUI" For YouTube-DL tool.
+Using this u can download videos, playlists, musics and etc.
 
 Youtube MP3 Downloader #CodedByZero
 
