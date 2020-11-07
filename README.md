@@ -10,13 +10,13 @@ If it isn't, use ytdl -u to update/install
 
 Warning: You also need ffmpeg !
 
-Usage: ytdl '<YTBlink>'
+Usage: ytdl 'LINK'
 
-To download a video use: ytdl -v '<YTBlink>'
+To download a video use: ytdl -v 'LINK'
 
-To download an entire mp3 playlist use: ytdl -pm '<YTBlink>'
+To download an entire mp3 playlist use: ytdl -pm 'LINK'
 
-To download an entire video playlist use: ytdl -pv '<YTBlink>'
+To download an entire video playlist use: ytdl -pv 'LINK'
 
-To keep the video file+mp3, use: ytdl -k '<YTBlink>'
+To keep the video file+mp3, use: ytdl -k 'LINK'
 
