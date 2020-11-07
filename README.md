@@ -1,21 +1,22 @@
-# mp3dl
+# YTDL
 Kinda "GUI" For YouTube-DL tool.
 Using this u can download videos, playlists, musics and etc.
 
-Youtube MP3 Downloader #CodedByZero
+Youtube-DL Helper
 
-Warning: youtube-dl tool must be installed :)
+Warning: youtube-dl tool must be INSTALLED
 
-If isn't, use mp3dl -u to update/install
+If it isn't, use ytdl -u to update/install
 
 Warning: You also need ffmpeg !
 
-Usage: mp3dl 'YTBlink'
+Usage: ytdl <YTBlink>
 
-To download a video use: mp3dl -v 'YTBlink'
+To download a video use: ytdl -v <YTBlink>
 
-To download an entire mp3 playlist use: mp3dl -pm 'YTBlink'
+To download an entire mp3 playlist use: ytdl -pm <YTBlink>
 
-To download an entire video playlist use: mp3dl -pv 'YTBlink'
+To download an entire video playlist use: ytdl -pv <YTBlink>
 
-To keep the video file+mp3, use: mp3dl -k 'YTBlink'
+To keep the video file+mp3, use: ytdl -k <YTBlink>
+
