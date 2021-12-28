@@ -1,22 +1,22 @@
 # YTDL
-Kinda "GUI" For YouTube-DL tool.
-Using this u can download videos, playlists, musics and etc.
+Kinda of an alias/auto updater for YT-DLP.
+Using this you can download videos, playlists, musics and etc with simple commands.
 
-Youtube-DL Helper
+Youtube-DLP Helper
 
-Warning: youtube-dl tool must be INSTALLED
-
+Warning: youtube-dlp tool must be INSTALLED
 If it isn't, use ytdl -u to update/install
+FFMPEG is also needed, please install it manually !
 
-Warning: You also need ffmpeg !
+Usage:
 
-Usage: ytdl 'LINK'
+To download a video as mp3 use: ytdl 'YTBlink'
 
-To download a video use: ytdl -v 'LINK'
+To keep the video file+mp3, use: ytdl -k 'YTBlink'
 
-To download an entire mp3 playlist use: ytdl -pm 'LINK'
+To download a video use: ytdl -v 'YTBlink'
 
-To download an entire video playlist use: ytdl -pv 'LINK'
+To download an entire mp3 playlist use: ytdl -pm 'YTBlink'
 
-To keep the video file+mp3, use: ytdl -k 'LINK'
+To download an entire video playlist use: ytdl -pv 'YTBlink'
 
