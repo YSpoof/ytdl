@@ -28,24 +28,24 @@ exit;}
 
 if($ARGV[0] eq '-v'){
 $link=$ARGV[1];
-system("$YTDL --no-playlist -f mp4 '$link'");
+system("$YTDL --no-playlist -f 'bv*[height>=1080]+ba/b[height>=1080] / bv*+ba/b' '$link'");
 exit; }
 
 if($ARGV[0] eq '-pm'){
 $link=$ARGV[1];
-system("$YTDL --yes-playlist -i -f mp4 -x --audio-format mp3 --audio-quality 320K '$link'");
+system("$YTDL --yes-playlist -i -x --audio-format mp3 --audio-quality 320K '$link'");
 exit;}
 
 if($ARGV[0] eq '-pv'){
 $link=$ARGV[1];
-system("$YTDL --yes-playlist -i -f mp4 '$link'");
+system("$YTDL --yes-playlist -i -f 'bv*[height>=1080]+ba/b[height>=1080] / bv*+ba/b' '$link'");
 exit;}
 
 if($ARGV[0] eq '-k'){
 $link=$ARGV[1];
-system("$YTDL --no-playlist -f mp4  -x -k --audio-format mp3 --audio-quality 320K '$link'");
+system("$YTDL --no-playlist -f 'bv*[height>=1080]+ba/b[height>=1080] / bv*+ba/b' -x -k --audio-format mp3 --audio-quality 320K '$link'");
 exit;}
 
 $link=$ARGV[0];
-system("$YTDL --no-playlist -f mp4 -x --audio-format mp3 --audio-quality 320K '$link'");
+system("$YTDL --no-playlist -x --audio-format mp3 --audio-quality 320K '$link'");
 exit;
